@@ -1,0 +1,165 @@
+// global definitions about the proj
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  box-sizing: border-box;
+
+  // overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+  color: #fff;
+
+  body {
+    width: 100%;
+    // background-color: lightgray;
+    // width: 70rem;
+  }
+
+  // !!!!!!!!!!!!!!!!!!!!
+  // 400px
+  @media (max-width: 25em) {
+    // 400px
+    .header {
+      // background-color: red;
+      &__second {
+        &--total {
+          &--top {
+            // border: 3px solid red;
+
+            &--icons {
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+
+              &--shopping {
+                margin: 0 3rem;
+              }
+              &--user {
+              }
+            }
+          }
+
+          &--down {
+            display: none;
+          }
+        }
+      }
+    }
+    .banner {
+      &__image {
+        // width: 0%;
+        right: 4rem;
+        // zoom in the image into the yellow jersey
+      }
+      &__text {
+        top: 1rem;
+        left: 1rem;
+
+        &--customized {
+          font-size: 1.4rem;
+        }
+        &--jerseys {
+          font-size: 1.4rem;
+        }
+      }
+      &__shop {
+        border: 2px solid #fff;
+
+        &--text {
+          font-size: 1rem;
+          font-weight: 800;
+        }
+        &--bag {
+        }
+      }
+    }
+  }
+
+  // !!!!!!!!!!!!!!!!!!!!!!!!
+  // 600px
+  @media (max-width: 37.5em) {
+    // 600px
+    .header {
+      &__top {
+        font-size: 1rem;
+      }
+      &__second {
+        &--yellow {
+          display: none;
+        }
+        &--total {
+          &--top {
+            // border: 3px solid red;
+
+            &--category {
+              display: none;
+            }
+            &--input {
+              &--searchBox {
+                display: none;
+              }
+              &--button {
+                display: none;
+              }
+              &--icon {
+              }
+            }
+            &--icons {
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+
+              &--shopping {
+                margin: 0 3rem;
+              }
+              &--user {
+              }
+            }
+          }
+
+          &--down {
+            display: none;
+          }
+        }
+      }
+    }
+    .banner {
+      &__image {
+        // width: 0%;
+        right: 4rem;
+        // zoom in the image into the yellow jersey
+      }
+      &__text {
+        font-size: 2rem;
+        top: 2rem;
+        left: 2rem;
+      }
+      &__shop {
+        font-size: 1.4rem;
+        position: absolute;
+        right: 2rem;
+        bottom: 2rem;
+      }
+    }
+  }
+
+  // // 900px
+  // @media (max-width: 56.25em) {
+  //   @content;
+  // }
+
+  // // 1200px
+  // @media (max-width: 75em) {
+  //   @content;
+  // }
+
+  // // 1800px
+  // @media (min-width: 112.5em) {
+  //   @content;
+  // }
+}

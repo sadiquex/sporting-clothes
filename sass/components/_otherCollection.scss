@@ -1,0 +1,67 @@
+.otherCollections {
+  margin: 10rem 3rem 3rem 3rem;
+  // border: 5px solid red;
+  max-width: 151.2rem;
+  // height: 79.2rem;
+
+  &__heading {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 6rem;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    // @include testBorder;
+    width: 100%;
+
+    &--cards {
+      width: 36rem;
+      height: 24rem;
+      position: relative;
+      margin: .5rem;
+      display: block;
+
+      &--image {
+        z-index: -100;
+        max-width: 100%;
+        // position: relative;
+
+        &--sub {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          z-index: 100;
+          display: flex;
+          width: 100%;
+          // background-color: blue;
+
+          &--text {
+            color: $color-black;
+            background-color: lime;
+            // padding: 1rem 4rem;
+            // font-size: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+            // flex: 1 1 40%;
+            width: 42.9rem;
+            // margin-right: auto;
+          }
+
+          &--icon {
+            display: inline;
+            background-color: $color-yellow-3;
+            padding: 2rem;
+          }
+        }
+      }
+    }
+  }
+}

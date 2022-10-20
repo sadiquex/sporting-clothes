@@ -1,0 +1,41 @@
+.afterBanner {
+  &__cards {
+    // border: 3px solid red;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &--card {
+      background-color: rgba($color: $color-yellow, $alpha: 0.5);
+      width: 25rem;
+      height: 10rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: .5rem;
+
+      &--text {
+        color: $color-black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+
+
+
+        &--span {
+          font-size: 80%;
+        }
+      }
+    }
+  }
+
+  &__rewardsBadge {
+    margin: 2rem 0;
+  }
+  
+}

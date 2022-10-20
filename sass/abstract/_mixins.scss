@@ -1,0 +1,26 @@
+@mixin positionLineAndShopNow {
+  position: absolute;
+  bottom: 1rem;
+  //   left: 2rem;
+}
+
+@mixin positionHeadingAndLines {
+  position: absolute;
+  left: 7rem;
+}
+
+@mixin headingMargins {
+  margin: 8rem 0 8rem 8rem;
+}
+
+@mixin testBorder {
+    border: 5px solid red;
+}
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

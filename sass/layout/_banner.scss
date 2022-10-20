@@ -1,0 +1,70 @@
+.banner {
+  margin: 2rem;
+  position: relative;
+
+  &__image {
+    width: 100%;
+  }
+
+  &__text {
+    font-size: 3rem;
+    font-weight: bolder;
+    position: absolute;
+    top: 7rem;
+    left: 7rem;
+    display: flex;
+    flex-direction: column;
+    &--customized {
+      color: $color-white;
+    }
+    &--jerseys {
+      color: $color-yellow;
+    }
+  }
+
+  &__shop {
+    position: absolute;
+    right: 3rem;
+    bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $color-white;
+
+    &--text {
+      padding: 1rem;
+    }
+    &--bag {
+      background-color: $color-white;
+      padding: 1.4rem;
+    }
+  }
+
+  &__lines {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &--yellow {
+      position: absolute;
+      bottom: 3rem;
+      left: 7rem;
+      width: 7rem;
+      height: 0.4rem;
+      background-color: $color-yellow;
+    }
+
+    &--white {
+      position: absolute;
+      bottom: 3rem;
+      left: 10rem;
+      width: 7rem;
+      height: 0.4rem;
+      background-color: rgba($color: $color-white, $alpha: 0.3);
+    }
+
+    //   select all line elements
+    //   [class^='line--'] {
+    //     margin-left: 3rem;
+    //   }
+  }
+}

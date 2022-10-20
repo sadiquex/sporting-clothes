@@ -1,0 +1,14 @@
+{
+  "name": "the-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "nice:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "sadique",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.3"
+  }
+}

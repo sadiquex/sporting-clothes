@@ -1,0 +1,74 @@
+.most-popular-section {
+  // border: 5px solid red;
+  margin: 8rem 2rem;
+
+  .mostPopular {
+    display: flex;
+    // flex-wrap: wrap;
+    max-width: 151.2rem;
+    // border: 5px solid red;
+    @include headingMargins;
+    overflow: hidden;
+    // height: 34rem;
+
+    &__heading {
+      font-size: 3.2rem;
+      text-transform: uppercase;
+      font-weight: 800;
+      @include headingMargins;
+    }
+    &__card {
+      display: flex;
+      flex-direction: column;
+      margin: 1rem 0.5rem;
+      border: $thin-border;
+      position: relative;
+
+      &--image {
+        position: relative;
+        &--photo {
+          // nothing
+        }
+        &--save {
+          background-color: $color-green-1;
+          position: absolute;
+          bottom: 2rem;
+          left: 2rem;
+          color: $color-white;
+          //   padding: .8rem 1.4rem;
+          width: 6.3rem;
+          height: 2.4rem;
+          font-size: 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      &--description {
+        font-size: 1.4rem;
+        margin-left: 2rem;
+      }
+
+      &--pricelist {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1rem;
+        // @include testBorder;
+
+        &--price {
+          font-size: 2rem;
+          font-weight: 600;
+          margin-right: 1rem;
+        }
+        &--discount {
+          font-size: 1.2rem;
+          color: $color-red;
+          text-decoration: line-through;
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+}

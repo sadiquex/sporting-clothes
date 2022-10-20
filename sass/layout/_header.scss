@@ -1,0 +1,108 @@
+.header {
+  &__top {
+    background-color: $color-black;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding: 1rem;
+    position: relative;
+
+    &--language {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__second {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    &--yellow {
+      background-color: $color-yellow;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 8.8rem;
+      width: 16rem;
+      z-index: -100;
+    }
+    &--total {
+      display: flex;
+      flex-direction: column;
+
+      &--top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem auto;
+
+        &--category {
+          display: flex;
+          align-items: center;
+          // margin: 0 3rem;
+        }
+
+        &--input {
+          // padding: 3rem;
+          display: flex;
+
+          &--searchBox {
+            font-family: inherit;
+            padding: 0.5rem 3rem;
+            align-items: center;
+            width: 40vw;
+            background-color: transparent;
+            // outline: 0;
+          }
+
+          &--button {
+            background-color: $color-yellow;
+            color: $color-black;
+
+            padding: 1rem 3rem;
+          }
+          &--icon {
+            background-color: $color-black;
+            padding: 2rem;
+          }
+        }
+
+        &--icons {
+          display: flex;
+          justify-content: space-between;
+          
+          align-items: center;
+          &--shopping {
+            background-color: $color-black;
+            padding: 1rem;
+          }
+          &--user {
+            padding: 1rem;
+          }
+        }
+      }
+    }
+
+    &--total {
+      &--down {
+        // border: 3px solid red;
+        color: $color-black;
+        border: $thin-border;
+        padding: 1rem 3rem;
+
+        &--ul {
+          // border: 3px solid green;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          &--item {
+            // border: 3px solid red;
+          }
+        }
+      }
+    }
+  }
+}

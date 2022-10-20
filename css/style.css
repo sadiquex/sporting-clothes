@@ -1,0 +1,454 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  color: #fff; }
+  html body {
+    width: 100%; }
+  @media (max-width: 25em) {
+    html .header__second--total--top--icons {
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      html .header__second--total--top--icons--shopping {
+        margin: 0 3rem; }
+    html .header__second--total--down {
+      display: none; }
+    html .banner__image {
+      right: 4rem; }
+    html .banner__text {
+      top: 1rem;
+      left: 1rem; }
+      html .banner__text--customized {
+        font-size: 1.4rem; }
+      html .banner__text--jerseys {
+        font-size: 1.4rem; }
+    html .banner__shop {
+      border: 2px solid #fff; }
+      html .banner__shop--text {
+        font-size: 1rem;
+        font-weight: 800; } }
+  @media (max-width: 37.5em) {
+    html .header__top {
+      font-size: 1rem; }
+    html .header__second--yellow {
+      display: none; }
+    html .header__second--total--top--category {
+      display: none; }
+    html .header__second--total--top--input--searchBox {
+      display: none; }
+    html .header__second--total--top--input--button {
+      display: none; }
+    html .header__second--total--top--icons {
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      html .header__second--total--top--icons--shopping {
+        margin: 0 3rem; }
+    html .header__second--total--down {
+      display: none; }
+    html .banner__image {
+      right: 4rem; }
+    html .banner__text {
+      font-size: 2rem;
+      top: 2rem;
+      left: 2rem; }
+    html .banner__shop {
+      font-size: 1.4rem;
+      position: absolute;
+      right: 2rem;
+      bottom: 2rem; } }
+
+body {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 1.6rem; }
+
+.header__top {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  padding: 1rem;
+  position: relative; }
+  .header__top--language {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.header__second {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .header__second--yellow {
+    background-color: #fadd18;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8.8rem;
+    width: 16rem;
+    z-index: -100; }
+  .header__second--total {
+    display: flex;
+    flex-direction: column; }
+    .header__second--total--top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 1rem auto; }
+      .header__second--total--top--category {
+        display: flex;
+        align-items: center; }
+      .header__second--total--top--input {
+        display: flex; }
+        .header__second--total--top--input--searchBox {
+          font-family: inherit;
+          padding: 0.5rem 3rem;
+          align-items: center;
+          width: 40vw;
+          background-color: transparent; }
+        .header__second--total--top--input--button {
+          background-color: #fadd18;
+          color: #000;
+          padding: 1rem 3rem; }
+        .header__second--total--top--input--icon {
+          background-color: #000;
+          padding: 2rem; }
+      .header__second--total--top--icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .header__second--total--top--icons--shopping {
+          background-color: #000;
+          padding: 1rem; }
+        .header__second--total--top--icons--user {
+          padding: 1rem; }
+  .header__second--total--down {
+    color: #000;
+    border: 2px solid #eaeaec;
+    padding: 1rem 3rem; }
+    .header__second--total--down--ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+
+.footer {
+  max-width: 151.2rem;
+  background-color: #f5f5f6;
+  padding: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .footer__elements {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+    margin-left: 8rem; }
+    .footer__elements--columns {
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+      margin-bottom: 3rem;
+      padding: 0 10rem 0 0; }
+      .footer__elements--columns--items--head {
+        font-weight: 800;
+        margin-bottom: 2.4rem;
+        font-size: 1.6rem; }
+        .footer__elements--columns--items--head--form {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 1rem; }
+          .footer__elements--columns--items--head--form--input {
+            padding: 1rem 4rem;
+            outline: none;
+            border: none;
+            font-family: inherit; }
+          .footer__elements--columns--items--head--form--icon {
+            background-color: #fadd18;
+            padding: 1rem; }
+      .footer__elements--columns--items--sub {
+        margin-bottom: 1.6rem;
+        font-size: 1.4rem;
+        display: flex; }
+        .footer__elements--columns--items--sub--social {
+          background-color: #000;
+          padding: 0.5rem;
+          margin: 0rem 0.5rem; }
+  .footer__down {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .footer__down--left {
+      font-size: 1.2rem;
+      margin-left: -5rem; }
+
+.banner {
+  margin: 2rem;
+  position: relative; }
+  .banner__image {
+    width: 100%; }
+  .banner__text {
+    font-size: 3rem;
+    font-weight: bolder;
+    position: absolute;
+    top: 7rem;
+    left: 7rem;
+    display: flex;
+    flex-direction: column; }
+    .banner__text--customized {
+      color: #fff; }
+    .banner__text--jerseys {
+      color: #fadd18; }
+  .banner__shop {
+    position: absolute;
+    right: 3rem;
+    bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff; }
+    .banner__shop--text {
+      padding: 1rem; }
+    .banner__shop--bag {
+      background-color: #fff;
+      padding: 1.4rem; }
+  .banner__lines {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .banner__lines--yellow {
+      position: absolute;
+      bottom: 3rem;
+      left: 7rem;
+      width: 7rem;
+      height: 0.4rem;
+      background-color: #fadd18; }
+    .banner__lines--white {
+      position: absolute;
+      bottom: 3rem;
+      left: 10rem;
+      width: 7rem;
+      height: 0.4rem;
+      background-color: rgba(255, 255, 255, 0.3); }
+
+.row {
+  max-width: 114rem;
+  background-color: grey;
+  color: #fff;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^='col-'] {
+    background-color: orange;
+    float: left; }
+    .row [class^='col-']:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+
+.afterBanner__cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .afterBanner__cards--card {
+    background-color: rgba(250, 221, 24, 0.5);
+    width: 25rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: .5rem; }
+    .afterBanner__cards--card--text {
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      text-align: center; }
+      .afterBanner__cards--card--text--span {
+        font-size: 80%; }
+
+.afterBanner__rewardsBadge {
+  margin: 2rem 0; }
+
+.most-popular-section {
+  margin: 8rem 2rem; }
+  .most-popular-section .mostPopular {
+    display: flex;
+    max-width: 151.2rem;
+    margin: 8rem 0 8rem 8rem;
+    overflow: hidden; }
+    .most-popular-section .mostPopular__heading {
+      font-size: 3.2rem;
+      text-transform: uppercase;
+      font-weight: 800;
+      margin: 8rem 0 8rem 8rem; }
+    .most-popular-section .mostPopular__card {
+      display: flex;
+      flex-direction: column;
+      margin: 1rem 0.5rem;
+      border: 2px solid #eaeaec;
+      position: relative; }
+      .most-popular-section .mostPopular__card--image {
+        position: relative; }
+        .most-popular-section .mostPopular__card--image--save {
+          background-color: #25d366;
+          position: absolute;
+          bottom: 2rem;
+          left: 2rem;
+          color: #fff;
+          width: 6.3rem;
+          height: 2.4rem;
+          font-size: 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+      .most-popular-section .mostPopular__card--description {
+        font-size: 1.4rem;
+        margin-left: 2rem; }
+      .most-popular-section .mostPopular__card--pricelist {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1rem; }
+        .most-popular-section .mostPopular__card--pricelist--price {
+          font-size: 2rem;
+          font-weight: 600;
+          margin-right: 1rem; }
+        .most-popular-section .mostPopular__card--pricelist--discount {
+          font-size: 1.2rem;
+          color: #ee503e;
+          text-decoration: line-through;
+          margin-left: 4px; }
+
+.countryleagues {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem 2rem;
+  overflow: hidden; }
+  .countryleagues__heading {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 8rem 0 8rem 8rem; }
+  .countryleagues__components {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 12rem; }
+    .countryleagues__components--card {
+      margin: 0.5rem; }
+      .countryleagues__components--card--description {
+        font-size: 1.4rem;
+        font-weight: bolder;
+        margin: 1.5rem; }
+
+.otherCollections {
+  margin: 10rem 3rem 3rem 3rem;
+  max-width: 151.2rem; }
+  .otherCollections__heading {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 6rem; }
+  .otherCollections__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%; }
+    .otherCollections__container--cards {
+      width: 36rem;
+      height: 24rem;
+      position: relative;
+      margin: .5rem;
+      display: block; }
+      .otherCollections__container--cards--image {
+        z-index: -100;
+        max-width: 100%; }
+        .otherCollections__container--cards--image--sub {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          z-index: 100;
+          display: flex;
+          width: 100%; }
+          .otherCollections__container--cards--image--sub--text {
+            color: #000;
+            background-color: lime;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+            width: 42.9rem; }
+          .otherCollections__container--cards--image--sub--icon {
+            display: inline;
+            background-color: #f9dc38;
+            padding: 2rem; }
+
+.beforeFooter {
+  max-width: 151.2rem;
+  height: 56rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  .beforeFooter__card {
+    max-width: 55.5rem;
+    height: 34rem;
+    position: relative;
+    background-color: #000;
+    border: 0 4rem; }
+    .beforeFooter__card--image {
+      z-index: -100;
+      opacity: 0.6;
+      width: 100%; }
+    .beforeFooter__card--text {
+      position: relative;
+      bottom: 14rem;
+      left: 3rem;
+      color: #fff;
+      display: flex;
+      flex-direction: column; }
+      .beforeFooter__card--text--big {
+        font-weight: 800;
+        font-size: 2.4rem;
+        text-transform: uppercase; }
+      .beforeFooter__card--text--small {
+        font-size: 1.6rem; }
+      .beforeFooter__card--text--icons {
+        display: flex;
+        flex-direction: row;
+        position: absolute; }
+      .beforeFooter__card--text--icons > img {
+        background-color: #fff;
+        padding: 0.9rem;
+        margin-right: 1rem; }

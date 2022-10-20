@@ -1,0 +1,44 @@
+.countryleagues {
+  // max-width: 151.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem 2rem;
+  // @include testBorder;
+  overflow: hidden;
+
+  //   flex-wrap: nowrap;
+
+  &__heading {
+    font-size: 3.2rem;
+    // @include testBorder;
+    text-transform: uppercase;
+    font-weight: 800;
+    // margin: 8rem 0rem 8rem 8rem;
+    @include headingMargins;
+  }
+
+  &__components {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // width: 100%;
+    margin-bottom: 12rem;
+    // margin-right: 12rem;
+
+    &--card {
+      margin: 0.5rem;
+      // @include testBorder;
+
+      &--photo {
+        // jhg
+      }
+
+      &--description {
+        font-size: 1.4rem;
+        font-weight: bolder;
+        margin: 1.5rem;
+      }
+    }
+  }
+}
