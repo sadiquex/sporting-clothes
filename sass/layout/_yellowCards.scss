@@ -24,11 +24,12 @@
         align-items: center;
         flex-wrap: wrap;
         text-align: center;
-
+        font-weight: 800;
 
 
         &--span {
           font-size: 80%;
+          font-weight: 400;
         }
       }
     }

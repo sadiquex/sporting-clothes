@@ -7,8 +7,7 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 62.5%;
-  color: #fff; }
+  font-size: 62.5%; }
   html body {
     width: 100%; }
   @media (max-width: 25em) {
@@ -241,7 +240,6 @@ body {
 
 .row {
   max-width: 114rem;
-  background-color: grey;
   color: #fff;
   margin: 0 auto; }
   .row:not(:last-child) {
@@ -260,13 +258,13 @@ body {
   .row .col-1-of-3 {
     width: calc((100% - 2 * 6rem) / 3); }
   .row .col-2-of-3 {
-    width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+    width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
   .row .col-1-of-4 {
     width: calc((100% - 3 * 6rem) / 4); }
   .row .col-2-of-4 {
-    width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+    width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
   .row .col-3-of-4 {
-    width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+    width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .afterBanner__cards {
   display: flex;
@@ -289,166 +287,123 @@ body {
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      text-align: center; }
+      text-align: center;
+      font-weight: 800; }
       .afterBanner__cards--card--text--span {
-        font-size: 80%; }
+        font-size: 80%;
+        font-weight: 400; }
 
 .afterBanner__rewardsBadge {
   margin: 2rem 0; }
 
-.most-popular-section {
-  margin: 8rem 2rem; }
-  .most-popular-section .mostPopular {
-    display: flex;
-    max-width: 151.2rem;
-    margin: 8rem 0 8rem 8rem;
-    overflow: hidden; }
-    .most-popular-section .mostPopular__heading {
-      font-size: 3.2rem;
-      text-transform: uppercase;
-      font-weight: 800;
-      margin: 8rem 0 8rem 8rem; }
-    .most-popular-section .mostPopular__card {
-      display: flex;
-      flex-direction: column;
-      margin: 1rem 0.5rem;
-      border: 2px solid #eaeaec;
+.popularShirts__text {
+  font-size: 3rem;
+  margin: 4rem;
+  font-weight: 800; }
+
+.popularShirts__cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 0rem; }
+  .popularShirts__cards--card {
+    border: 2px solid #eaeaec;
+    margin: 0.2rem;
+    position: relative; }
+    .popularShirts__cards--card--photo {
       position: relative; }
-      .most-popular-section .mostPopular__card--image {
-        position: relative; }
-        .most-popular-section .mostPopular__card--image--save {
-          background-color: #25d366;
-          position: absolute;
-          bottom: 2rem;
-          left: 2rem;
-          color: #fff;
-          width: 6.3rem;
-          height: 2.4rem;
-          font-size: 1rem;
-          display: flex;
-          align-items: center;
-          justify-content: center; }
-      .most-popular-section .mostPopular__card--description {
-        font-size: 1.4rem;
-        margin-left: 2rem; }
-      .most-popular-section .mostPopular__card--pricelist {
+      .popularShirts__cards--card--photo--green {
+        position: absolute;
+        left: 2rem;
+        bottom: 2rem;
+        background-color: #23c353;
+        color: #fff;
+        padding: 0.4rem 1rem; }
+    .popularShirts__cards--card--text {
+      margin: 0.6rem 0rem 2rem 1.3rem; }
+      .popularShirts__cards--card--text--price {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 1rem; }
-        .most-popular-section .mostPopular__card--pricelist--price {
-          font-size: 2rem;
-          font-weight: 600;
-          margin-right: 1rem; }
-        .most-popular-section .mostPopular__card--pricelist--discount {
-          font-size: 1.2rem;
+        align-items: center; }
+        .popularShirts__cards--card--text--price--main {
+          font-weight: bolder; }
+        .popularShirts__cards--card--text--price--sub {
           color: #ee503e;
           text-decoration: line-through;
-          margin-left: 4px; }
+          font-size: 1.2rem;
+          margin-left: 1rem; }
 
-.countryleagues {
+.countryLeagues {
+  margin: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 1rem 2rem;
-  overflow: hidden; }
-  .countryleagues__heading {
-    font-size: 3.2rem;
-    text-transform: uppercase;
+  flex-wrap: wrap; }
+  .countryLeagues__heading {
+    font-size: 3rem;
     font-weight: 800;
-    margin: 8rem 0 8rem 8rem; }
-  .countryleagues__components {
+    margin: 4rem 0rem; }
+  .countryLeagues__cards {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 12rem; }
-    .countryleagues__components--card {
-      margin: 0.5rem; }
-      .countryleagues__components--card--description {
-        font-size: 1.4rem;
-        font-weight: bolder;
-        margin: 1.5rem; }
+    flex-wrap: wrap; }
+    .countryLeagues__cards--card {
+      margin: 0.6rem; }
+      .countryLeagues__cards--card--name {
+        font-weight: 700;
+        margin: 0.6rem 0rem; }
 
 .otherCollections {
-  margin: 10rem 3rem 3rem 3rem;
-  max-width: 151.2rem; }
+  margin: 4rem 0rem; }
   .otherCollections__heading {
-    font-size: 3.2rem;
-    text-transform: uppercase;
+    font-size: 3rem;
     font-weight: 800;
-    margin: 6rem; }
-  .otherCollections__container {
+    margin: 4rem 2rem; }
+  .otherCollections__cards {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%; }
-    .otherCollections__container--cards {
-      width: 36rem;
-      height: 24rem;
+    flex-wrap: wrap; }
+    .otherCollections__cards--card {
       position: relative;
-      margin: .5rem;
-      display: block; }
-      .otherCollections__container--cards--image {
-        z-index: -100;
-        max-width: 100%; }
-        .otherCollections__container--cards--image--sub {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          z-index: 100;
-          display: flex;
-          width: 100%; }
-          .otherCollections__container--cards--image--sub--text {
-            color: #000;
-            background-color: lime;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: bolder;
-            width: 42.9rem; }
-          .otherCollections__container--cards--image--sub--icon {
-            display: inline;
-            background-color: #f9dc38;
-            padding: 2rem; }
+      margin: 0.5rem; }
+      .otherCollections__cards--card--image--blur {
+        z-index: 1000;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        background-color: coral;
+        width: 100%;
+        padding: 1rem 0; }
+        .otherCollections__cards--card--image--blur--text {
+          margin-left: 2rem;
+          border: 3px solid red; }
+        .otherCollections__cards--card--image--blur--icon {
+          padding: 2rem;
+          background-color: #fadd18;
+          border: 3px solid red; }
 
 .beforeFooter {
-  max-width: 151.2rem;
-  height: 56rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; }
-  .beforeFooter__card {
-    max-width: 55.5rem;
-    height: 34rem;
-    position: relative;
-    background-color: #000;
-    border: 0 4rem; }
-    .beforeFooter__card--image {
-      z-index: -100;
-      opacity: 0.6;
-      width: 100%; }
-    .beforeFooter__card--text {
+  margin: 4rem 0rem; }
+  .beforeFooter__cards {
+    color: #fff;
+    display: flex; }
+    .beforeFooter__cards--card {
       position: relative;
-      bottom: 14rem;
-      left: 3rem;
-      color: #fff;
-      display: flex;
-      flex-direction: column; }
-      .beforeFooter__card--text--big {
-        font-weight: 800;
-        font-size: 2.4rem;
-        text-transform: uppercase; }
-      .beforeFooter__card--text--small {
-        font-size: 1.6rem; }
-      .beforeFooter__card--text--icons {
-        display: flex;
-        flex-direction: row;
-        position: absolute; }
-      .beforeFooter__card--text--icons > img {
-        background-color: #fff;
-        padding: 0.9rem;
-        margin-right: 1rem; }
+      width: 50rem;
+      margin: 0rem 2rem;
+      background-color: #000; }
+      .beforeFooter__cards--card--image {
+        width: 100%;
+        opacity: 70%; }
+      .beforeFooter__cards--card--text {
+        position: absolute;
+        bottom: 2rem;
+        left: 2rem; }
+        .beforeFooter__cards--card--text--big {
+          font-weight: 700; }
+        .beforeFooter__cards--card--text--socials {
+          display: flex;
+          margin: 1rem 0rem; }
+          .beforeFooter__cards--card--text--socials--icon {
+            background-color: #fff;
+            padding: 1rem;
+            margin: 0.5rem; }

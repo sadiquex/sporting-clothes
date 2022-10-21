@@ -1,55 +1,42 @@
 .beforeFooter {
-  max-width: 151.2rem;
-  height: 56rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  // @include testBorder;
+  margin: 4rem 0rem;
 
-  &__card {
-    max-width: 55.5rem;
-    height: 34rem;
-    position: relative;
-    background-color: $color-black;
-    // @include testBorder;
-    border: 0 4rem;
+  &__cards {
+    color: $color-white;
+    display: flex;
+    // justify-content: center;
 
-    &--image {
-      // border: 4px solid green;
-
-      z-index: -100;
-      opacity: 0.6;
-      width: 100%;
-    }
-
-    &--text {
+    &--card {
       position: relative;
-      bottom: 14rem;
-      left: 3rem;
-      color: $color-white;
-      display: flex;
-      flex-direction: column;
+      width: 50rem;
+      margin: 0rem 2rem;
+      background-color: $color-black;
 
-      &--big {
-        font-weight: 800;
-        font-size: 2.4rem;
-        text-transform: uppercase;
+      &--image {
+        width: 100%;
+        opacity: 70%;
       }
 
-      &--small {
-        font-size: 1.6rem;
-      }
-      &--icons {
-        display: flex;
-        flex-direction: row;
+      &--text {
         position: absolute;
-      }
-      &--icons > img {
-        background-color: $color-white;
-        padding: 0.9rem;
-        margin-right: 1rem;
+        bottom: 2rem;
+        left: 2rem;
+
+        &--big {
+          font-weight: 700;
+        }
+        &--small {
+        }
+        &--socials {
+          display: flex;
+          margin: 1rem 0rem;
+
+          &--icon {
+            background-color: $color-white;
+            padding: 1rem;
+            margin: 0.5rem;
+          }
+        }
       }
     }
   }
