@@ -1,90 +1,57 @@
 .footer {
-  max-width: 151.2rem;
-  background-color: $color-white-light;
-  padding: 10rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  background-color: $color-grey;
+  padding: 4rem;
+  margin: 2rem;
+  // width: 100%;
 
-
-  &__elements {
+  &__columns {
     display: flex;
-    justify-content: center;
-    margin-top: 8rem;
-    margin-left: 8rem;
+    justify-content: space-between;
+    font-size: 1.2rem;
 
-    &--columns {
-      display: flex;
-      flex-direction: column;
-      list-style-type: none;
-      // @include testBorder;
-      margin-bottom: 3rem;
-      padding: 0 10rem 0 0;
+    &--column {
+      list-style: none;
+      margin: 2rem;
+      line-height: 3rem;
+      margin-right: 5rem;
 
-      &--items {
-        // nothing's here
+      &--head {
+        font-weight: 700;
+      }
+      &--sub {
+      }
 
-        &--head {
-          // @include testBorder;
+      &--email {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0rem;
 
-          font-weight: 800;
-          margin-bottom: 2.4rem;
-          // margin-right: 5rem;
-          font-size: 1.6rem;
-
-          &--form {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            // @include testBorder;
-            margin-top: 1rem;
-            
-            &--input {
-              padding: 1rem 4rem;
-              outline: none;
-              border: none;
-              font-family: inherit;
-
-            }
-
-            &--icon {
-              background-color: $color-yellow;
-              padding: 1rem;
-              // margin-left: .5rem;
-
-            }
-          }
+        &--emailaddress {
+          font-family: inherit;
+          background-color: rgba($color: $color-white, $alpha: 0.5);
+          padding: 1rem 4rem;
+          outline: none;
+          border: none;
         }
-
-        &--sub {
-          margin-bottom: 1.6rem;
-          font-size: 1.4rem;
-          display: flex;
-
-          // @include testBorder;
-          &--social {
-            background-color: $color-black;
-            padding: 0.5rem;
-            margin: 0rem 0.5rem;
-          }
+        &--send {
+          background-color: $color-yellow;
+          padding: 1rem;
         }
       }
-    }
-  }
 
-  &__down {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    // @include testBorder;
-    // @include headingMargins;
-    
-    &--left {
-      font-size: 1.2rem;
-      margin-left: -5rem;
+      &--social {
+        display: flex;
+        align-items: center;
+        margin: 1rem 0rem;
 
-    }
-    &--right {
+        &--icon {
+          // background-color: $color-white;
+          background-color: $color-black;
+          padding: 1rem;
+          margin: 0.5rem;
+        }
+      }
     }
   }
 }

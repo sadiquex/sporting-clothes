@@ -139,55 +139,42 @@ body {
       align-items: center; }
 
 .footer {
-  max-width: 151.2rem;
-  background-color: #f5f5f6;
-  padding: 10rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
-  .footer__elements {
+  background-color: #eaeaec;
+  padding: 4rem;
+  margin: 2rem; }
+  .footer__columns {
     display: flex;
-    justify-content: center;
-    margin-top: 8rem;
-    margin-left: 8rem; }
-    .footer__elements--columns {
-      display: flex;
-      flex-direction: column;
-      list-style-type: none;
-      margin-bottom: 3rem;
-      padding: 0 10rem 0 0; }
-      .footer__elements--columns--items--head {
-        font-weight: 800;
-        margin-bottom: 2.4rem;
-        font-size: 1.6rem; }
-        .footer__elements--columns--items--head--form {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin-top: 1rem; }
-          .footer__elements--columns--items--head--form--input {
-            padding: 1rem 4rem;
-            outline: none;
-            border: none;
-            font-family: inherit; }
-          .footer__elements--columns--items--head--form--icon {
-            background-color: #fadd18;
-            padding: 1rem; }
-      .footer__elements--columns--items--sub {
-        margin-bottom: 1.6rem;
-        font-size: 1.4rem;
-        display: flex; }
-        .footer__elements--columns--items--sub--social {
+    justify-content: space-between;
+    font-size: 1.2rem; }
+    .footer__columns--column {
+      list-style: none;
+      margin: 2rem;
+      line-height: 3rem;
+      margin-right: 5rem; }
+      .footer__columns--column--head {
+        font-weight: 700; }
+      .footer__columns--column--email {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0rem; }
+        .footer__columns--column--email--emailaddress {
+          font-family: inherit;
+          background-color: rgba(255, 255, 255, 0.5);
+          padding: 1rem 4rem;
+          outline: none;
+          border: none; }
+        .footer__columns--column--email--send {
+          background-color: #fadd18;
+          padding: 1rem; }
+      .footer__columns--column--social {
+        display: flex;
+        align-items: center;
+        margin: 1rem 0rem; }
+        .footer__columns--column--social--icon {
           background-color: #000;
-          padding: 0.5rem;
-          margin: 0rem 0.5rem; }
-  .footer__down {
-    display: flex;
-    justify-content: space-around;
-    align-items: center; }
-    .footer__down--left {
-      font-size: 1.2rem;
-      margin-left: -5rem; }
+          padding: 1rem;
+          margin: 0.5rem; }
 
 .banner {
   margin: 2rem;
@@ -213,7 +200,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #fff; }
+    border: 1px solid #fff;
+    color: #fff; }
     .banner__shop--text {
       padding: 1rem; }
     .banner__shop--bag {
