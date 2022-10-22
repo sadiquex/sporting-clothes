@@ -32,7 +32,45 @@ html {
       border: 2px solid #fff; }
       html .banner__shop--text {
         font-size: 1rem;
-        font-weight: 800; } }
+        font-weight: 800; }
+    html .popularShirts {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      html .popularShirts__text {
+        display: flex;
+        flex-direction: column; }
+      html .popularShirts__cards {
+        display: flex;
+        justify-content: center; }
+        html .popularShirts__cards--card {
+          margin: 1rem; }
+    html .otherCollections__cards {
+      align-items: center;
+      justify-content: center; }
+      html .otherCollections__cards--card {
+        width: 36rem; }
+    html .beforeFooter__cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      html .beforeFooter__cards--card {
+        display: flex;
+        margin: 1rem 0rem;
+        width: 38rem; }
+    html .footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%; }
+      html .footer__column {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+      html .footer__down {
+        flex-direction: column;
+        align-items: center;
+        border: 3px solid red; } }
   @media (max-width: 37.5em) {
     html .header__top {
       font-size: 1rem; }
@@ -391,24 +429,26 @@ body {
     .otherCollections__cards--card {
       position: relative;
       margin: 0.5rem; }
-      .otherCollections__cards--card--image--blur {
-        z-index: 1000;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        background-color: coral;
-        width: 100%;
-        padding: 1rem 0; }
-        .otherCollections__cards--card--image--blur--text {
-          margin-left: 2rem;
-          border: 3px solid red; }
-        .otherCollections__cards--card--image--blur--icon {
-          padding: 2rem;
-          background-color: #fadd18;
-          border: 3px solid red; }
+      .otherCollections__cards--card--image {
+        width: 100%; }
+        .otherCollections__cards--card--image--blur {
+          z-index: 1000;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          color: #fff;
+          display: flex;
+          align-items: center;
+          background-color: coral;
+          width: 100%;
+          padding: 1rem 0; }
+          .otherCollections__cards--card--image--blur--text {
+            margin-left: 2rem;
+            border: 3px solid red; }
+          .otherCollections__cards--card--image--blur--icon {
+            padding: 2rem;
+            background-color: #fadd18;
+            border: 3px solid red; }
 
 .beforeFooter {
   margin: 4rem 0rem; }
