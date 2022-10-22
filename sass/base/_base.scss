@@ -83,6 +83,7 @@ html {
   // 600px
   @media (max-width: 37.5em) {
     // 600px
+
     .header {
       &__top {
         font-size: 1rem;
@@ -143,6 +144,74 @@ html {
         position: absolute;
         right: 2rem;
         bottom: 2rem;
+      }
+    }
+
+    .afterBanner {
+      &--card {
+        &--text {
+          &--span {
+          }
+        }
+      }
+    }
+
+
+    .popularShirts {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &__text {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &__cards {
+        display: flex;
+        justify-content: center;
+
+        &--card {
+          margin: 1rem;
+        }
+      }
+      
+    }
+    
+    .otherCollections {
+
+      &__cards {
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    
+    .beforeFooter {
+
+      &__cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
+
+        &--card {
+          margin: 1rem 0rem;
+
+        }
+      }
+    }
+    
+    .footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &__column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 3px solid red;
+      }
+      &__down {
+        flex-direction: column;
       }
     }
   }

@@ -2,11 +2,16 @@
   background-color: $color-grey;
   padding: 4rem;
   margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   // width: 100%;
+  // overflow-x: hidden;
 
   &__columns {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     font-size: 1.2rem;
 
     &--column {
@@ -53,5 +58,12 @@
         }
       }
     }
+  }
+
+  &__down {
+    margin-top: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
