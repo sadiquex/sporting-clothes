@@ -25,8 +25,33 @@ html {
     // 400px
     .header {
       // background-color: red;
+
+      &__top {
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+        padding: 1rem;
+        position: relative;
+
+        &--language {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        &--chat {
+          background-color: #25d366;
+          padding: 0.5rem;
+        }
+      }
+
       &__second {
+        border: 3px solid red;
         &--total {
+          display: flex;
+          justify-content: space-around;
           &--top {
             // border: 3px solid red;
 
@@ -78,6 +103,13 @@ html {
       }
     }
 
+    .afterBanner {
+      &__cards {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
     .popularShirts {
       display: flex;
       flex-direction: column;
@@ -91,9 +123,12 @@ html {
       &__cards {
         display: flex;
         justify-content: center;
+        align-items: center;
+        // border: 3px solid red;
 
         &--card {
-          margin: 1rem;
+          // margin: 1rem;
+          width: 100%;
         }
       }
     }
@@ -126,17 +161,32 @@ html {
     .footer {
       display: flex;
       flex-direction: column;
+      justify-content: center;
       align-items: center;
-      width: 100%;
+      width: 90%;
+      // background-color: orange;
+      // border: 3px solid red;
       &__column {
         display: flex;
         flex-direction: column;
         align-items: center;
       }
       &__down {
+        display: flex;
         flex-direction: column;
         align-items: center;
-        border: 3px solid red;
+        justify-content: center;
+        // position: relative;
+        // width: 90%;
+
+        &--left {
+          // border: 3px solid red;
+          font-size: 1.2rem;
+        }
+        &--right {
+          // border: 3px solid red;
+          // position: absolute;
+        }
       }
     }
   }
