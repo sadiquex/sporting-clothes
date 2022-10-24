@@ -1,15 +1,20 @@
 .beforeFooter {
   margin: 4rem 0rem;
+  box-sizing: border-box;
 
   &__cards {
     color: $color-white;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
     // justify-content: center;
 
     &--card {
       position: relative;
-      width: 50rem;
-      margin: 0rem 2rem;
+      width: 60rem;
+      margin: 1rem;
       background-color: $color-black;
 
       &--image {
@@ -21,6 +26,7 @@
         position: absolute;
         bottom: 2rem;
         left: 2rem;
+        font-size: 2rem;
 
         &--big {
           font-weight: 700;

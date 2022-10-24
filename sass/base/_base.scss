@@ -15,6 +15,7 @@ html {
 
   body {
     width: 100%;
+    margin: 2rem;
     // background-color: lightgray;
     // width: 70rem;
   }
@@ -103,13 +104,39 @@ html {
       }
     }
 
+    // after banner
+    // !!!!!!!!!!!!!!!!
     .afterBanner {
       &__cards {
+        // border: 3px solid red;
         display: flex;
         justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+
+        &--card {
+          width: 18rem;
+          height: 8rem;
+
+          &--text {
+            display: flex;
+            font-weight: 800;
+
+            &--span {
+              font-size: 80%;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+
+      &__rewardsBadge {
+        margin: 2rem 0;
       }
     }
 
+    // most popular
     .popularShirts {
       display: flex;
       flex-direction: column;
@@ -117,18 +144,54 @@ html {
 
       &__text {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+      }
+
+      &__cards {
+        overflow-x: scroll;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        &--card {
+          // border: 2px solid rebeccapurple;
+        }
+      }
+      &__cards:first-child {
+        margin-left: 1rem;
+      }
+    }
+
+    // country leagues
+    .countryLeagues {
+      margin: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      &__heading {
+        font-weight: 800;
+        margin: 4rem 0rem;
       }
 
       &__cards {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
-        // border: 3px solid red;
 
         &--card {
-          // margin: 1rem;
-          width: 100%;
+          margin: 0.6rem;
+          // width: 100%;
+          // border: 3px solid red;
+          &--image {
+          }
+          &--name {
+            font-weight: 700;
+            margin: 0.6rem 0rem;
+          }
         }
       }
     }
@@ -153,7 +216,11 @@ html {
         &--card {
           display: flex;
           margin: 1rem 0rem;
-          width: 38rem;
+          width: 36rem;
+
+          &--text {
+            font-size: 1.2rem;
+          }
         }
       }
     }
@@ -240,6 +307,24 @@ html {
         }
       }
     }
+
+    // before footer
+    .beforeFooter {
+      &__cards {
+        width: 95vw;
+
+        &--card {
+          display: flex;
+          margin: 1rem 0rem;
+          width: 40rem;
+
+          &--text {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+
     .banner {
       &__image {
         // width: 0%;
@@ -288,10 +373,46 @@ html {
       }
     }
 
+    // country leagues
+    .countryLeagues {
+      margin: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      &__heading {
+        font-weight: 800;
+        margin: 4rem 0rem;
+      }
+
+      &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &--card {
+          margin: 0.6rem;
+          // width: 100%;
+          // border: 3px solid red;
+          &--image {
+          }
+          &--name {
+            font-weight: 700;
+            margin: 0.6rem 0rem;
+          }
+        }
+      }
+    }
+
     .otherCollections {
       &__cards {
         align-items: center;
         justify-content: center;
+
+        &--card {
+          width: 40rem;
+        }
       }
     }
 
@@ -309,16 +430,25 @@ html {
 
     .footer {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
       &__column {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        border: 3px solid red;
       }
       &__down {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        // border: 3px solid red;
+        
+
+        &--right {
+        }
+        &--left {
+        }
       }
     }
   }

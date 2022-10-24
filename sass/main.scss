@@ -14,7 +14,7 @@
 @import 'layout/footer';
 @import 'layout/banner';
 @import 'layout/grid';
-@import 'layout/yellowCards';
+@import 'layout/yellowCards'; //also called after banner
 
 // components folder
 @import 'components/navigation';
@@ -22,5 +22,6 @@
 @import 'components/countryLeagues';
 @import 'components/otherCollection';
 @import 'components/beforeFooter';
-@import 'components/description';
+@import 'components/des';
+// @import 'components/description';
  

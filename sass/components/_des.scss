@@ -1,0 +1,131 @@
+.description {
+  margin: 4rem;
+//   border: 2px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  &__images {
+    &--big {
+    }
+    &--smalls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+
+      &--small {
+        margin: 0.5rem 0;
+
+        &--active {
+        }
+        &--notActive {
+          opacity: 0.5;
+        }
+        &--notActive:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+
+    &--top {
+      margin: 2rem 0rem;
+
+      &--heading {
+        font-weight: 700;
+        font-size: 2rem;
+      }
+      &--pricing {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2rem;
+
+        &--main {
+          font-weight: 700;
+          font-size: 3rem;
+        }
+        &--discount {
+          color: $color-red;
+          text-decoration: line-through;
+          margin: 0rem 1rem;
+        }
+        &--save {
+          background-color: $color-green-1;
+          color: $color-white;
+          padding: 0.5rem 2rem;
+          font-size: 80%;
+        }
+        &--favorites {
+          font-size: 80%;
+          border: $thin-border;
+          padding: 0.5rem 1.5rem;
+          margin-left: 1rem;
+        }
+      }
+    }
+
+    &--second {
+      max-width: 45rem;
+      font-size: 85%;
+      font-weight: 300;
+    }
+
+    &--input {
+      margin-top: 3rem;
+      &--field {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 3rem;
+
+        &--label {
+          font-size: 70%;
+          font-weight: 600;
+          &--star {
+            color: red;
+            font-weight: 600;
+            font-size: 1.6rem;
+          }
+        }
+        &--chart {
+          background-color: rgba($color: $color-grey, $alpha: 0.5);
+          padding: 1rem 2rem;
+          font-size: 80%;
+          font-weight: 600;
+          margin-left: 1rem;
+        }
+        &--form {
+          padding: 1rem 4rem;
+          font-family: inherit;
+          font-size: 70%;
+          display: flex;
+          border: $thin-border;
+        }
+      }
+    }
+  }
+
+  &__cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-yellow;
+    &--text {
+      // padding: .5rem;
+      font-weight: 800;
+      margin-left: 2rem;
+      font-size: 80%;
+    }
+    &--icon {
+      margin-left: 1rem;
+      background-color: $color-black;
+      padding: 1.5rem;
+    }
+  }
+}
