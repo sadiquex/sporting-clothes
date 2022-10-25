@@ -4,15 +4,19 @@
     color: $color-white;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     text-transform: uppercase;
     padding: 1rem;
+    margin: 0 0.5rem;
     // position: relative;
 
     &--language {
       display: flex;
       justify-content: center;
       align-items: center;
-       &--globe {
+      background-color: $color-grey-dark;
+      padding: 0.5rem 5rem;
+      &--globe {
         margin-right: 0.5rem;
       }
       &--icon {
@@ -26,6 +30,7 @@
     }
     &--chat {
       background-color: $color-green-1;
+      padding: 0.5rem 3rem;
     }
   }
 
@@ -124,8 +129,8 @@
       &--down {
         // border: 3px solid red;
         color: $color-black;
-        border: 1px solid rgba($color-grey, .7);
-        padding: .4rem 4rem .4rem 0;
+        border: 1px solid rgba($color-grey, 0.7);
+        padding: 0.4rem 4rem 0.4rem 0;
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;

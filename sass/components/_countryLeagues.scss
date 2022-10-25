@@ -13,10 +13,13 @@
 
   &__cards {
     display: flex;
+    // justify-content: center;
     flex-wrap: wrap;
 
     &--card {
-      margin: 0.6rem;
+      margin: 0.5rem;
+      // width: 20rem;
+      // border: 3px solid red;
       &--image {
       }
       &--name {

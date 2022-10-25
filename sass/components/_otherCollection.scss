@@ -25,18 +25,19 @@
           left: 0;
           color: $color-white;
           display: flex;
+          justify-content: space-between;
           align-items: center;
-          background-color: coral;
+          background-color: rgba(0, 0, 0, 0.548);
           width: 100%;
-          padding: 1rem 0;
           &--text {
             margin-left: 2rem;
+            padding: 0rem 2rem;
+            color: blue;
             border: 3px solid red;
           }
           &--icon {
-            padding: 2rem;
             background-color: $color-yellow;
-            border: 3px solid red;
+            padding: 2rem;
           }
         }
       }

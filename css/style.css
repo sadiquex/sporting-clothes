@@ -28,17 +28,19 @@ html {
       html .header__top--chat {
         background-color: #25d366;
         padding: 0.5rem; }
-    html .header__second--total {
-      display: flex;
-      justify-content: space-around; }
-      html .header__second--total--top--icons {
+    html .header__second {
+      position: relative; }
+      html .header__second--total {
         display: flex;
-        justify-content: space-around;
-        align-items: center; }
-        html .header__second--total--top--icons--shopping {
-          margin: 0 3rem; }
-      html .header__second--total--down {
-        display: none; }
+        justify-content: space-between; }
+        html .header__second--total--top--icons {
+          display: flex;
+          justify-content: space-around;
+          align-items: center; }
+          html .header__second--total--top--icons--shopping {
+            margin: 0 3rem; }
+        html .header__second--total--down {
+          display: none; }
     html .banner__image {
       right: 4rem; }
     html .banner__text {
@@ -55,16 +57,17 @@ html {
         font-weight: 800; }
     html .afterBanner__cards {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
       margin: 0 auto; }
       html .afterBanner__cards--card {
         width: 18rem;
-        height: 8rem; }
+        height: 8rem;
+        margin: 0.5rem auto; }
         html .afterBanner__cards--card--text {
           display: flex;
-          font-weight: 800; }
+          font-size: 90%; }
           html .afterBanner__cards--card--text--span {
             font-size: 80%;
             font-weight: 400; }
@@ -135,7 +138,54 @@ html {
         align-items: center;
         justify-content: center; }
         html .footer__down--left {
-          font-size: 1.2rem; } }
+          font-size: 1.2rem; }
+    html .description__images--smalls {
+      justify-content: space-between; }
+      html .description__images--smalls--small--active {
+        margin: 0.2rem; }
+      html .description__images--smalls--small--notActive {
+        margin: 0.2rem; }
+    html .description__text {
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box; }
+      html .description__text--top {
+        margin: 2rem 0rem; }
+        html .description__text--top--heading {
+          font-size: 95%; }
+        html .description__text--top--pricing {
+          font-size: 95%; }
+          html .description__text--top--pricing--main {
+            font-size: 2.5rem; }
+          html .description__text--top--pricing--discount {
+            margin: 0rem 0.8rem; }
+          html .description__text--top--pricing--save {
+            padding: 0.5rem 2rem;
+            font-size: 70%; }
+          html .description__text--top--pricing--favorites {
+            font-size: 80%;
+            padding: 0.5rem 1.5rem;
+            margin-left: 1rem; }
+      html .description__text--second {
+        line-height: 2rem; }
+      html .description__text--input {
+        position: relative; }
+        html .description__text--input--field {
+          margin-bottom: 1.5rem;
+          margin-right: 1rem; }
+          html .description__text--input--field--label {
+            font-size: 70%;
+            font-weight: 600; }
+            html .description__text--input--field--label--star {
+              font-weight: 600;
+              font-size: 1.6rem; }
+          html .description__text--input--field--chart {
+            padding: 1rem 1rem;
+            text-align: center;
+            font-size: 70%;
+            font-weight: 600; }
+    html .description__cart--text {
+      font-size: 70%; } }
   @media (max-width: 37.5em) {
     html .header__top {
       font-size: 1rem; }
@@ -174,6 +224,20 @@ html {
       position: absolute;
       right: 2rem;
       bottom: 2rem; }
+    html .afterBanner__cards {
+      justify-content: space-around; }
+      html .afterBanner__cards--card {
+        width: 16rem;
+        height: 8rem;
+        margin: 0.5rem auto; }
+        html .afterBanner__cards--card--text {
+          display: flex;
+          font-size: 90%; }
+          html .afterBanner__cards--card--text--span {
+            font-size: 80%;
+            font-weight: 400; }
+    html .afterBanner__rewardsBadge {
+      margin: 2rem 0; }
     html .popularShirts {
       display: flex;
       flex-direction: column;
@@ -239,12 +303,16 @@ body {
   color: #fff;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   text-transform: uppercase;
-  padding: 1rem; }
+  padding: 1rem;
+  margin: 0 0.5rem; }
   .header__top--language {
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    background-color: #242425;
+    padding: 0.5rem 5rem; }
     .header__top--language--globe {
       margin-right: 0.5rem; }
     .header__top--language--icon {
@@ -253,7 +321,8 @@ body {
       padding: 0.5rem;
       margin-left: 0.5rem; }
   .header__top--chat {
-    background-color: #25d366; }
+    background-color: #25d366;
+    padding: 0.5rem 3rem; }
 
 .header__second {
   position: relative;
@@ -320,7 +389,7 @@ body {
   .header__second--total--down {
     color: #000;
     border: 1px solid rgba(234, 234, 236, 0.7);
-    padding: .4rem 4rem .4rem 0;
+    padding: 0.4rem 4rem 0.4rem 0;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start; }
@@ -383,6 +452,8 @@ body {
     justify-content: center;
     align-items: center;
     justify-content: space-between; }
+    .footer__down--left {
+      margin: 8rem auto; }
     .footer__down--right {
       transform: scale(0.8); }
 
@@ -428,13 +499,20 @@ body {
       width: 7rem;
       height: 0.4rem;
       background-color: #fadd18; }
-    .banner__lines--white {
+    .banner__lines--whites {
       position: absolute;
-      bottom: 3rem;
-      left: 10rem;
-      width: 7rem;
-      height: 0.4rem;
-      background-color: rgba(255, 255, 255, 0.3); }
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .banner__lines--whites--white {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        bottom: 3rem;
+        left: 20rem;
+        width: 7rem;
+        height: 0.4rem;
+        background-color: rgba(255, 255, 255, 0.3); }
 
 .row {
   max-width: 114rem;
@@ -469,27 +547,38 @@ body {
   justify-content: space-between;
   flex-wrap: wrap; }
   .afterBanner__cards--card {
-    background-color: rgba(250, 221, 24, 0.5);
+    background-color: #fefae1;
     width: 25rem;
     height: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
-    margin: .5rem; }
+    margin: 0.5rem;
+    position: relative; }
     .afterBanner__cards--card--text {
       color: #000;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       flex-wrap: wrap;
       text-align: center;
-      font-weight: 800; }
+      font-weight: 800;
+      font-size: 80%;
+      margin-top: 4rem;
+      margin-left: 2rem;
+      position: absolute; }
       .afterBanner__cards--card--text--span {
         font-size: 80%;
         font-weight: 400; }
+    .afterBanner__cards--card--icon {
+      background-color: #f8d307;
+      padding: 1rem;
+      position: absolute;
+      top: 0;
+      left: 2; }
 
 .afterBanner__rewardsBadge {
   margin: 2rem 0; }
@@ -543,7 +632,7 @@ body {
     display: flex;
     flex-wrap: wrap; }
     .countryLeagues__cards--card {
-      margin: 0.6rem; }
+      margin: 0.5rem; }
       .countryLeagues__cards--card--name {
         font-weight: 700;
         margin: 0.6rem 0rem; }
@@ -569,17 +658,18 @@ body {
           left: 0;
           color: #fff;
           display: flex;
+          justify-content: space-between;
           align-items: center;
-          background-color: coral;
-          width: 100%;
-          padding: 1rem 0; }
+          background-color: rgba(0, 0, 0, 0.548);
+          width: 100%; }
           .otherCollections__cards--card--image--blur--text {
             margin-left: 2rem;
+            padding: 0rem 2rem;
+            color: blue;
             border: 3px solid red; }
           .otherCollections__cards--card--image--blur--icon {
-            padding: 2rem;
             background-color: #fadd18;
-            border: 3px solid red; }
+            padding: 2rem; }
 
 .beforeFooter {
   margin: 4rem 0rem;
@@ -618,18 +708,23 @@ body {
   margin: 4rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; }
-  .description__images--smalls {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%; }
-    .description__images--smalls--small {
-      margin: 0.5rem 0; }
-      .description__images--smalls--small--notActive {
-        opacity: 0.5; }
-      .description__images--smalls--small--notActive:hover {
-        opacity: 1; }
+  justify-content: space-around;
+  box-sizing: border-box; }
+  .description__images {
+    cursor: pointer; }
+    .description__images--big {
+      width: 100%; }
+    .description__images--smalls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%; }
+      .description__images--smalls--small {
+        margin: 0.5rem 0; }
+        .description__images--smalls--small--notActive {
+          opacity: 0.5; }
+        .description__images--smalls--small--notActive:hover {
+          opacity: 1; }
   .description__text {
     display: flex;
     flex-direction: column; }
@@ -653,17 +748,23 @@ body {
         .description__text--top--pricing--save {
           background-color: #25d366;
           color: #fff;
-          padding: 0.5rem 2rem;
-          font-size: 80%; }
-        .description__text--top--pricing--favorites {
+          padding: 1rem 3rem;
           font-size: 80%;
+          word-break: keep-all; }
+        .description__text--top--pricing--favorites {
+          display: flex;
+          align-items: center;
           border: 2px solid #eaeaec;
-          padding: 0.5rem 1.5rem;
+          padding: 1rem 1.5rem;
           margin-left: 1rem; }
+          .description__text--top--pricing--favorites--text {
+            font-size: 80%;
+            margin-left: 1rem; }
     .description__text--second {
       max-width: 45rem;
       font-size: 85%;
-      font-weight: 300; }
+      font-weight: 400;
+      line-height: 2rem; }
     .description__text--input {
       margin-top: 3rem;
       display: flex;

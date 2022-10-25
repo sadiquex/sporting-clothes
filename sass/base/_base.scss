@@ -51,9 +51,13 @@ html {
 
       &__second {
         // border: 3px solid red;
+        position: relative;
         &--total {
+          // border: 3px solid red;
           display: flex;
-          justify-content: space-around;
+          // margin-left: 4rem;
+          // position: absolute;
+          justify-content: space-between;
           &--top {
             &--icons {
               display: flex;
@@ -80,6 +84,9 @@ html {
         // width: 0%;
         right: 4rem;
         // zoom in the image into the yellow jersey
+        // border: 3px solid red;
+        // transform: scale(2);
+        // margin: 2rem;
       }
       &__text {
         top: 1rem;
@@ -110,7 +117,7 @@ html {
       &__cards {
         // border: 3px solid red;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
         margin: 0 auto;
@@ -118,10 +125,12 @@ html {
         &--card {
           width: 18rem;
           height: 8rem;
+          margin: 0.5rem auto;
 
           &--text {
             display: flex;
-            font-weight: 800;
+            font-size: 90%;
+            // border: 2px solid red;
 
             &--span {
               font-size: 80%;
@@ -261,6 +270,100 @@ html {
     // description
     .description {
       // border: 3px solid red;
+
+      &__images {
+        &--big {
+          // width: 100%;
+        }
+        &--smalls {
+          justify-content: space-between;
+          // width: 100%;
+
+          &--small {
+            &--active {
+              margin: 0.2rem;
+            }
+            &--notActive {
+              margin: 0.2rem;
+            }
+          }
+        }
+      }
+
+      // text
+      // !!!!!!!!!!!!!!!!!!!!!!!!!!!
+      &__text {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+
+        &--top {
+          margin: 2rem 0rem;
+
+          &--heading {
+            font-size: 95%;
+          }
+          &--pricing {
+            font-size: 95%;
+
+            &--main {
+              font-size: 2.5rem;
+            }
+            &--discount {
+              margin: 0rem 0.8rem;
+            }
+            &--save {
+              padding: 0.5rem 2rem;
+              font-size: 70%;
+            }
+            &--favorites {
+              font-size: 80%;
+              // border: $thin-border;
+              padding: 0.5rem 1.5rem;
+              margin-left: 1rem;
+            }
+          }
+        }
+
+        &--second {
+          line-height: 2rem;
+        }
+
+        &--input {
+          position: relative;
+          &--field {
+            margin-bottom: 1.5rem;
+            margin-right: 1rem;
+
+            &--label {
+              font-size: 70%;
+              font-weight: 600;
+              &--star {
+                font-weight: 600;
+                font-size: 1.6rem;
+              }
+            }
+            &--chart {
+              padding: 1rem 1rem;
+              text-align: center;
+              font-size: 70%;
+              font-weight: 600;
+            }
+            &--form {
+            }
+          }
+        }
+      }
+
+      // !!!!!!!!!!!!!!!!!!!!!!
+      // cart
+      &__cart {
+        &--text {
+          font-size: 70%;
+        }
+        &--icon {
+        }
+      }
     }
   }
 
@@ -350,15 +453,35 @@ html {
       }
     }
 
+    // after banner
+    // !!!!!!!!!!!!!!!!
     .afterBanner {
-      &--card {
-        &--text {
-          &--span {
+      &__cards {
+        // border: 3px solid red;
+        justify-content: space-around;
+
+        &--card {
+          width: 16rem;
+          height: 8rem;
+          margin: 0.5rem auto;
+
+          &--text {
+            display: flex;
+            font-size: 90%;
+            // border: 2px solid red;
+
+            &--span {
+              font-size: 80%;
+              font-weight: 400;
+            }
           }
         }
       }
-    }
 
+      &__rewardsBadge {
+        margin: 2rem 0;
+      }
+    }
     .popularShirts {
       display: flex;
       flex-direction: column;
